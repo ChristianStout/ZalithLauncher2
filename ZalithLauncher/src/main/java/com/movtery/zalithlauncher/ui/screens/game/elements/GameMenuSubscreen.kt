@@ -549,6 +549,17 @@ private fun ControlGamepad(
         contentPadding = PaddingValues(all = 8.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
+        // Gamepad Passthrough
+        item {
+            MenuSwitchButton(
+                modifier = Modifier.fillMaxWidth(),
+                text = stringResource(R.string.settings_gamepad_passthrough_title),
+                switch = AllSettings.gamepadPassthrough.state,
+                onSwitch = { AllSettings.gamepadPassthrough.save(it) },
+                color = color,
+                contentColor = contentColor,
+            )
+        }
         //手柄控制总开关
         item {
             MenuSwitchButton(

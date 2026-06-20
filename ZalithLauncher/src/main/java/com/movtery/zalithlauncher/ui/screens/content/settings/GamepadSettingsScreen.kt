@@ -206,6 +206,14 @@ fun GamepadSettingsScreen(
                     SwitchSettingsCard(
                         modifier = Modifier.fillMaxWidth(),
                         position = CardPosition.Middle,
+                        unit = AllSettings.gamepadPassthrough,
+                        title = stringResource(R.string.settings_gamepad_passthrough_title),
+                        summary = stringResource(R.string.settings_gamepad_passthrough_summary)
+                    )
+
+                    SwitchSettingsCard(
+                        modifier = Modifier.fillMaxWidth(),
+                        position = CardPosition.Middle,
                         unit = AllSettings.gamepadControl,
                         title = stringResource(R.string.settings_gamepad_title),
                         summary = stringResource(R.string.settings_gamepad_summary)

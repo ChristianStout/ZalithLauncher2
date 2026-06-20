@@ -243,6 +243,11 @@ object AllSettings : SettingsRegistry() {
      */
     val enableMouseClick = boolSetting("enableMouseClick", true)
 
+    /** ;
+     * Allows Gamepad passthrough for mod support
+     */
+    val gamepadPassthrough = boolSetting("gamepadPassthrough", false)
+
     /**
      * 是否启用手柄控制
      */
